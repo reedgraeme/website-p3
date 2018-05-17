@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="keywords" content="responsive, UX, UI, SEO, Graphic design, web design, graeme reed, html5, css, creative, portfolio, design, graphic, development, branding">
+<meta name="Description" content="Web Design - UX Design - UI Design - SEO - Graphic Design - Branding - Animation - HTML - CSS - javascript">
+<title>Web Design & Graphic Design Portfolio | Graeme Reed</title>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+  <body>
+  <div class="heading">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-2">
+          <p>Home</p>
+          </div>
+          <div class="col-2">
+              <button class="hamburger"><i class="fa fa-bars"></i></button>
+              <button class="cross"><i class="fa fa-times"></i></button>
+            <nav class="menu">
+                <a href="index.php">Home Page</a>
+                <a href="index.php">About</a>
+                <a href="index.php">Visual Comm Design</a>
+                <a href="index.php">Random Project</a>
+                <a href="webdesign.php">Web Design | <span class="subheading">Development</span></a>
+                <a href="graphicdesign.html">Graphic Design | <span class="subheading">Branding</span></a>
+            </nav>
+          </div>
+          </div>
+          <div class="row">
+        <div class="col-xl-12 titletext">
+          <h4><strong>Graeme Reed</strong></h4>
+          <h1><strong>Graphic & Web Design</strong></h1>
+          <h1>Portfolio</h1>
+          <p>Learn more about me and the type of work i do.  <i class="fa fa-arrow-right"></i></p>
+        </div>
+        <div class="col-xl-12 socialmedia">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-behance"></i></a>
+          <a href="#"><i class="fa fa-facebook-square"></i></a>
+          <a href="#"><i class="fa fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container projectgallerytitles">
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <p>Recent Project</p>
+      </div>
+      <div class="col-7">
+        <p>Project Types</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-sm-12 featured">
+        <div class="row">
+          <div class="col-5">
+      <img src="graphic-design.jpg" class="featuredimage">
+          </div>
+            <div class="col-7">
+            <strong><p>Userful Corp.</p></strong>
+              <p>Website re-Design</p>
+              <p>Userful Corp, is a video wall software company, featuring dashboards control rooms, artistic and digital signage</p>
+              <p><strong>2018</strong></p>
+              <a href="#"><i class="fa fa-arrow-circle-right fa-lg"></i></a>
+            </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+      <div class="col-xl-7 col-sm-12">
+        <div class="row">
+          <a href="#" class="col-xl-3 col-sm-12 project">
+            <div><p>Graphic</p><p>Design</p></div>
+            <img src="graphic-design.jpg">
+          </a>
+          <a href="#" class="col-xl-3 col-sm-12 project">
+            <div><p>Web</p><p>Design</p></div>
+            <img src="web-design.jpg">
+          </a>
+          <a href="#" class="col-xl-3 col-sm-12 project">
+            <div><p>Visual Comm</p><p>Design</p></div>
+            <img src="information.jpg">
+          </a>
+          <a href="#" class="col-xl-3 col-sm-12 project">
+            <div><p>Random</p><p>Project</p></div>
+            <img src="random.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  <footer>
+  </footer>
+
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+  <script>
+  $( document ).ready(function() {
+  $( ".cross" ).hide();
+  $( ".menu" ).hide();
+  $( ".hamburger" ).click(function() {
+  $( ".menu" ).slideToggle( "slow" , function() {
+  $( ".hamburger" ).hide();
+  $( ".cross" ).show();
+  });
+  });
+
+  $( ".cross" ).click(function() {
+  $( ".menu" ).slideToggle( "slow", function() {
+  $( ".cross" ).hide();
+  $( ".hamburger" ).show();
+  });
+  });
+
+  });
+  </script>
+</html>

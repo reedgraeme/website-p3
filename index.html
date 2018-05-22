@@ -33,11 +33,11 @@
           </div>
           </div>
           <div class="row">
-        <div class="col-xl-12 titletext">
+        <div class="col-xl-12 titletext Reveal">
           <h4><strong>Graeme Reed</strong></h4>
           <h1><strong>Graphic & Web Design</strong></h1>
           <h1>Portfolio</h1>
-          <p>Learn more about me and the type of work i do.  <i class="fa fa-arrow-right"></i></p>
+          <a href="#"><p>Learn more about me and the type of work I do. <i class="fa fa-arrow-right"></i></p></a>
         </div>
         <div class="col-xl-12 socialmedia">
           <a href="#"><i class="fa fa-instagram"></i></a>
@@ -50,48 +50,45 @@
       </div>
     </div>
   </div>
-  <div class="container projectgallerytitles">
-    <div class="row justify-content-between">
-      <div class="col-4">
+  <div class="container projectgallerytitles Reveal">
+    <div class="row">
+      <div class="col-xl-12">
         <p>Recent Project</p>
       </div>
-      <div class="col-7">
-        <p>Project Types</p>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-xl-4 col-sm-12 featured">
-        <div class="row">
-          <div class="col-5">
-      <img src="graphic-design.jpg" class="featuredimage">
-          </div>
-            <div class="col-7">
+      <a href="#">
+      <img src="userful.jpg" class="featuredimage">
+          <div>
             <strong><p>Userful Corp.</p></strong>
               <p>Website re-Design</p>
               <p>Userful Corp, is a video wall software company, featuring dashboards control rooms, artistic and digital signage</p>
               <p><strong>2018</strong></p>
-              <a href="#"><i class="fa fa-arrow-circle-right fa-lg"></i></a>
-            </div>
-      </div>
-    </div>
+              <i class="fa fa-arrow-circle-right fa-lg"></i>
+            </div></a></div>
+
     <div class="col-1"></div>
       <div class="col-xl-7 col-sm-12">
         <div class="row">
-          <a href="#" class="col-xl-3 col-sm-12 project">
+          <p></p>
+          <a href="#" class="col-xl-3 col-md-3 col-sm-3 project">
             <div><p>Graphic</p><p>Design</p></div>
             <img src="graphic-design.jpg">
+            <img src="plus.svg" class="plus">
           </a>
-          <a href="#" class="col-xl-3 col-sm-12 project">
+          <a href="#" class="col-xl-3 col-md-3 col-sm-3 project">
             <div><p>Web</p><p>Design</p></div>
             <img src="web-design.jpg">
+            <img src="plus.svg" class="plus">
           </a>
-          <a href="#" class="col-xl-3 col-sm-12 project">
+          <a href="#" class="col-xl-3 col-md-3 col-sm-3 project">
             <div><p>Visual Comm</p><p>Design</p></div>
             <img src="information.jpg">
+            <img src="plus.svg" class="plus">
           </a>
-          <a href="#" class="col-xl-3 col-sm-12 project">
+          <a href="#" class="col-xl-3 col-md-3 col-sm-3 project">
             <div><p>Random</p><p>Project</p></div>
             <img src="random.jpg">
+            <img src="plus.svg" class="plus">
           </a>
         </div>
       </div>
@@ -99,13 +96,18 @@
   </div>
   </body>
   <footer>
+    <p>Copyright © 2018 Graeme Reed</p>
   </footer>
-
-
-  <script src="http://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous">
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="scrollreveal.min.js"></script>
+  <script>
+  	  window.sr = ScrollReveal();
+  	    if (sr.isSupported()) {
+          document.documentElement.classList.add('sr');
+        }
+        sr.reveal('.Reveal', { origin: 'right', reset: false, mobile: true, viewFactor:0.9, });
   </script>
+
   <script>
   $( document ).ready(function() {
   $( ".cross" ).hide();
@@ -116,14 +118,12 @@
   $( ".cross" ).show();
   });
   });
-
   $( ".cross" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
   $( ".cross" ).hide();
   $( ".hamburger" ).show();
   });
   });
-
   });
   </script>
 </html>
